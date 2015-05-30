@@ -1,0 +1,12 @@
+name: dqjczs
+version: 1
+
+cron:
+    - description: backup database in 00:20
+      url: cron_dbback.php
+      schedule: every day of month 00:20
+      timezone: Beijing
+    - description: backup database in 06:00
+      url: cron_sendmail.php
+      schedule: every day of month 06:00
+      timezone: Beijing
